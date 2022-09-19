@@ -1,0 +1,38 @@
+.wrapper{
+  max-width: 400px;
+  margin:0 auto;
+  color: #666;
+}
+
+/* テキスト */
+input{
+  box-sizing: border-box;
+  width: 76%;
+  height: 1.75rem;
+  font-size: 1.6rem;
+  text-align: right;
+  padding: 0 0.75rem;
+  background-color: black;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.buttons button{
+  font-size: 18px;
+  width: 18%;
+  height: 1.75rem;
+  color: #333;
+  vertical-align: middle;
+  border-color: #fff;
+  border-radius: 8px;
+}
+
+.buttons-1 button{
+  width: 37.3%;
+  font-size: 18px;
+  height: 1.75rem;
+  color: #333;
+  vertical-align: middle;
+  border-color: #fff;
+  border-radius: 8px;
+}
