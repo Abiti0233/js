@@ -1,6 +1,7 @@
 let result = "";
 let is_calc = false;
 
+
 window.onload = function () {
   result = document.getElementById('result');
 };
@@ -15,6 +16,12 @@ function num_click(val){
     result.value = "0.";
   }else if(result.value == "0"){
     result.value = val;
+  }else if(result.value.includes(".") && val == "."){
+    result.value = result.value.replace(/$"."/,"");
+  }else if(result.value.includes("00") && val == "00"){
+    result.value = result.value.replace(/$"00"/,"");
+  }else if(result.value.includes("0") && val == "0"){
+    result.value = result.value.replace(/$"0"/,"");
   }else{
     result.value += val;
   }
